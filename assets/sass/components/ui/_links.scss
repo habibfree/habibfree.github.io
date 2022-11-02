@@ -1,0 +1,17 @@
+a {
+	color: inherit;
+	
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+		text-decoration: none;
+	}
+}

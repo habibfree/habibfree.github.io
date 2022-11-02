@@ -1,0 +1,54 @@
+/*-------------------------------------------------
+    [ ## Buttons ]
+-------------------------------------------------*/
+button {
+	transition: all 0.25s ease;
+}
+.btn {
+    &:active:focus,
+    &:focus {
+       box-shadow: none;
+    }
+}
+.button-success {
+    display: inline-block;
+    background-color: #99F787;
+    color: #000;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.6rem 2.4rem;
+    box-shadow: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: #009F9D;
+        color: #fff;
+    }
+}
+
+
+
+// Scroll To Top Button
+.topbutton {
+    margin: 0px;    
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 999;
+    background-color: rgba(#009F9D, 0.8);
+    @include width-height(5rem, 5rem);
+    @include flex-center;
+    opacity: 0;
+
+    @media (max-width: 576px) {
+        right: 10px;
+    }
+    &.btn-show {
+        bottom: 30px;
+        visibility: visible;
+        opacity: 1;
+    }
+}

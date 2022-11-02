@@ -1,0 +1,25 @@
+html {
+	font-size: 50%;
+	@include xsm-up {
+		font-size: 55%;
+	}
+	@include xl-up {
+		font-size: 58%;
+	}
+	@include xxl-up {
+		font-size: 62.5%;
+	}
+}
+
+body {
+	font-family: var(--font-primary);
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+
+@import 'colors';
+@import 'radius';
+@import 'copy';
+@import 'headings';
+@import 'section-title';
+
